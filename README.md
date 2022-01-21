@@ -1,5 +1,6 @@
 # python_itsafe
 
-STATUS: finished vid 2
+STATUS: movie 19 - 9.16
+solving save state from file...
 
 in this repo I'm practicing my python towards a certificate while having fun in Thailand...
