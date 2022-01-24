@@ -1,8 +1,10 @@
 import random
 rand = random.randint(1,100)
 
-def start():
-    tries = 0
+# load saved tries...
+
+def start(tries):
+
     menu = input('press [s] to start, [l] to load last game, [x] to exit...')
     if menu == 'x':
         print('goodbye')
@@ -22,10 +24,18 @@ def start():
             continue
         else:
             print('Congratulations, you won! ', rand)
+            save(tries)
             exit(0)
-
-
     return guess, scope, tries
 
+def save(tries):
+    with open('result.txt', 'w') as fd:
+        fd.write('number | attempts \n')
+        fd.write(str(rand))
+        fd.write('|')
+        fd.write(str(tries))
+
+
+
 if __name__ == "__main__":
-    start()
+    start(0)

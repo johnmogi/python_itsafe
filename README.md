@@ -1,6 +1,9 @@
 # python_itsafe
 
-STATUS: rebuild guess game + save state and load
+STATUS: considering course restart with legends..
+
+
+rebuild guess game + save state and load
 
 update - the whole situation with the popen...
 might require re-install, or try to install win or linux on vm..
